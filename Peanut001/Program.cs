@@ -23,16 +23,25 @@ namespace Peanut001
         private static int NumberOfTigerWinners = 0;
         // use getters and setters to mutate/change the variables
 
-        public void setNumberOfLionWinners(int increment)
+        public static void setNumberOfLionWinners(int increment)
         {
             NumberOfLionWinners += increment;
         }
 
-        public void setNumberOfTigerWinners(int increment)
+        public static void setNumberOfTigerWinners(int increment)
         {
             NumberOfTigerWinners += increment;
         }
 
+        public static int getNumberOfLionWinners()
+        {
+            return NumberOfLionWinners;
+        }
+
+        public static int getNumberOfTigerWinners()
+        {
+            return NumberOfTigerWinners;
+        }
         public void Run()
         {
             Lion lion1 = new Lion();
@@ -46,12 +55,12 @@ namespace Peanut001
             Lion[] lions = new Lion[10];
             Tiger[] tigers = new Tiger[10];
 
-            for (int i = 1; i <= lions.Length; i++)
+            for (int i = 1; i <  lions.Length; i++)
             {
                 lions[i] = new Lion();
             }
 
-            for (int i = 1; i <= tigers.Length; i++)
+            for (int i = 1; i <  tigers.Length; i++)
             {
                 tigers[i] = new Tiger();
             }
@@ -74,9 +83,15 @@ namespace Peanut001
             for (int z = 0; z <= a.Length; z++)
             {
                 if (a[z].GetStrength() > b[z].GetStrength()){
-
+                    DriverManager.setNumberOfLionWinners(1);
                 }
+                else {DriverManager.setNumberOfTigerWinners(1); }
             }
+
+            String m = Convert.ToString(DriverManager.getNumberOfLionWinners());
+
+            String n = Convert.ToString(DriverManager.getNumberOfTigerWinners());
+            Console.WriteLine("LIONS: {0},   Tigers: {1}", m, n );
         }
 
     }
