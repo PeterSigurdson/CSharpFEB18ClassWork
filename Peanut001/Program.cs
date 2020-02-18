@@ -19,18 +19,18 @@ namespace Peanut001
     class DriverManager
     {
         // the OO Principle of Encapsulation says: Make all variables PRIVATE
-        private int NumberOfLionWinners = 0;
-        private int NumberOfTigerWinners = 0;
+        private static int NumberOfLionWinners = 0;
+        private static int NumberOfTigerWinners = 0;
         // use getters and setters to mutate/change the variables
 
         public void setNumberOfLionWinners(int increment)
         {
-            this.NumberOfLionWinners += increment;
+            NumberOfLionWinners += increment;
         }
 
         public void setNumberOfTigerWinners(int increment)
         {
-            this.NumberOfTigerWinners += increment;
+            NumberOfTigerWinners += increment;
         }
 
         public void Run()
@@ -58,8 +58,8 @@ namespace Peanut001
 
             // Pass the Arrays to the doCompetition() method
             // 
-            Competition c1 = new Competition(lions, tigers);
-            c1.DoCompetition();
+            Competition c1 = new Competition();
+            c1.DoCompetition(lions, tigers);
         }
     }
 
@@ -73,7 +73,7 @@ namespace Peanut001
 
             for (int z = 0; z <= a.Length; z++)
             {
-                a[z].GetStrength() > b[z].GetStrength(){
+                if (a[z].GetStrength() > b[z].GetStrength()){
 
                 }
             }
