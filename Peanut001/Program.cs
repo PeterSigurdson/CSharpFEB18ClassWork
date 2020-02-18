@@ -42,9 +42,23 @@ namespace Peanut001
 
             // create 10 Lion Objects and 10 Tiger Objects
             // marshall these objects into ARRAYS
+
+            Lion[] lions = new Lion[10];
+            Tiger[] tigers = new Tiger[10];
+
+            for (int i = 1; i <= lions.Length; i++)
+            {
+                lions[i] = new Lion();
+            }
+
+            for (int i = 1; i <= tigers.Length; i++)
+            {
+                tigers[i] = new Tiger();
+            }
+
             // Pass the Arrays to the doCompetition() method
             // 
-            Competition c1 = new Competition();
+            Competition c1 = new Competition(lions, tigers);
             c1.DoCompetition();
         }
     }
@@ -57,7 +71,6 @@ namespace Peanut001
             // iterate over each DS, use IF / THEN to see which is strong
             // set number of lion winners, how tiger winners with the public method of Driver Class
         }
-
 
     }
 
