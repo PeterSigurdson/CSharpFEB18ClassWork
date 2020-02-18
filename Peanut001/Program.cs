@@ -65,11 +65,18 @@ namespace Peanut001
 
     class Competition
     {
-        public void DoCompetition()
+        public void DoCompetition(Lion[] a, Tiger[] b)
         {
             // DoCompetition will  take 2 arrays of Lions and Tigers as Parameters
             // iterate over each DS, use IF / THEN to see which is strong
             // set number of lion winners, how tiger winners with the public method of Driver Class
+
+            for (int z = 0; z <= a.Length; z++)
+            {
+                a[z].GetStrength() > b[z].GetStrength(){
+
+                }
+            }
         }
 
     }
@@ -84,6 +91,11 @@ namespace Peanut001
                 {
                     this.SetStrength();
                 }
+
+            public int GetStrength()
+        {
+            return this.Strength;
+        }
             public int SetStrength()
             { Random r1 = new Random();
                 // use a Random Number Generator to set the Strength
