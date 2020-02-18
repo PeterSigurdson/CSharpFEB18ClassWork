@@ -66,10 +66,15 @@ namespace Peanut001
             String name;
             int Strength;
 
+            // note the use of the ZERO ARGS constructor!
+            public Feline()
+                {
+                    this.SetStrength();
+                }
             public int SetStrength()
             { Random r1 = new Random();
                 // use a Random Number Generator to set the Strength
-                this.Strength = r1.Next();
+                this.Strength = r1.Next()/10000000;
             Console.WriteLine(this.Strength);
                 return this.Strength;
             }
