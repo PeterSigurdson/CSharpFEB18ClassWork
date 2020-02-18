@@ -1,0 +1,11 @@
+C:\FEB18CSharpWork\Peanut001\bin\Debug\netcoreapp2.1\Peanut001.deps.json
+C:\FEB18CSharpWork\Peanut001\bin\Debug\netcoreapp2.1\Peanut001.runtimeconfig.json
+C:\FEB18CSharpWork\Peanut001\bin\Debug\netcoreapp2.1\Peanut001.runtimeconfig.dev.json
+C:\FEB18CSharpWork\Peanut001\bin\Debug\netcoreapp2.1\Peanut001.dll
+C:\FEB18CSharpWork\Peanut001\bin\Debug\netcoreapp2.1\Peanut001.pdb
+C:\FEB18CSharpWork\Peanut001\obj\Debug\netcoreapp2.1\Peanut001.csprojAssemblyReference.cache
+C:\FEB18CSharpWork\Peanut001\obj\Debug\netcoreapp2.1\Peanut001.csproj.CoreCompileInputs.cache
+C:\FEB18CSharpWork\Peanut001\obj\Debug\netcoreapp2.1\Peanut001.AssemblyInfoInputs.cache
+C:\FEB18CSharpWork\Peanut001\obj\Debug\netcoreapp2.1\Peanut001.AssemblyInfo.cs
+C:\FEB18CSharpWork\Peanut001\obj\Debug\netcoreapp2.1\Peanut001.dll
+C:\FEB18CSharpWork\Peanut001\obj\Debug\netcoreapp2.1\Peanut001.pdb
